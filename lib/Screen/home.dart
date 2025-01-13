@@ -1,5 +1,4 @@
 import "package:flutter/material.dart";
-import 'package:http/http.dart';
 import 'package:rest_api_tutorial/Model/user.dart';
 import 'package:rest_api_tutorial/Services/user_api.dart';
 
@@ -34,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
             final email = user.email;
             return ListTile(
               title: Text(user.fullName),
-              subtitle: Text(user.phone),
+              subtitle: Text(user.email),
             );
           }),
     );
